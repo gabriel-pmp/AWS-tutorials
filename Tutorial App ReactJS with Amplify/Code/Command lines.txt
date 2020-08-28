@@ -1,1 +1,14 @@
-text
+# Verify node version. If it's older than 8.0, should be updated nodejs.org/download 
+node -v;
+
+# Create a reactJS application
+npx create-react-app amplifyapp
+cd amplifyapp
+npm start
+
+# Init git repository
+git init
+git remote add origin git@github.com:gabriel-pmp/Tutorial App ReactJS with Amplify/.git
+git add .
+git commit -m ‘initial commit’
+git push origin master
